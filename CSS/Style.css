@@ -1,0 +1,127 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* сбрасываем настройки для ul,ol, для гиперссылок */
+ul, ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #373434;
+}
+body{
+	/* обязательно */
+	font-family: "PT Sans", Arial, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	/* line-height: 24px высчитали 16px+16/2 */
+	line-height: 24px;
+	color: #000;
+}
+.header{
+	/* если есть заливка */
+	background: #c0c0c0;
+}
+.container{
+	/* для контейнера прописываются только следующие настройки */
+	width: 1320px;
+	margin: 0 auto;
+}
+.header-inner{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+}
+.menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.menu li{
+	/* отступов задаем между словами */
+	margin: 0 0.4vw;
+}
+.menu a{
+	color: black;
+	font-family: "Roboto Condensed", Arial, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+}
+.contact{
+	/* для текста друг под другом */
+	display: flex;
+	flex-direction: column;
+}
+.contact a{
+	/* унаследовать отродителяцвет  inherit*/
+	color: inherit;
+}
+.square{
+	/* прячется кнопка меню на большом экране */
+	display: none;
+}
+/*для группировки с одинаковыми стилями находим родителя и прописываем .В нашем случае .header-inner a{все стили}
+.contact a{
+	font-family: "Roboto Condensed", Arial, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: inherit;
+}
+.menu a{
+	color: black;
+	font-family: "Roboto Condensed", Arial, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+} */
+
+/* промо-блок */
+.promo{
+	background: rgb(246, 241, 241) url(../Img/design.png) no-repeat 50% 0;
+	background-size: cover;
+	/* background-attachment: fixed фиксирует картинку */
+	background-attachment: fixed;
+	
+}
+.promo-inner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* height: 622px; */
+	height: 90vh;
+	
+}
+.promo h1{
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 70px;
+text-align: center;
+width: 990px;
+/* отступы посмотреть в фигме по проекту */
+margin-bottom: 50px;
+
+}
+.promo h3{
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 26px;
+text-align: center;
+margin-top: 50px;
+}
+.btn-cta{
+width: 493px;
+height: 48px;
+background: #496217;
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 48px;
+text-align: center;
+color: #F1E2D2;
+margin-top: 50px;
+}

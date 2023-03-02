@@ -1,0 +1,98 @@
+/* стиль для мобильной версии */
+@media (max-width: 851px){
+    .container{
+        width: 100%;
+				padding: 0 2vw;
+        margin: 0 auto;
+        /* лучше для мобильной версии написать минимальную ширину */
+        min-width: 275px;
+    }
+    .header-inner{
+        height: 50px;
+        width: 100%;
+        position: relative;
+    }
+    .nav{
+        display: none;
+    }
+    .contact a{
+        font-size: 18px;
+    }
+    .link_call{
+        /* убираем текст "заказать звонок" */
+        display: none;
+    }
+   .logo{
+    /* прописываем размер логотипа */
+    width: 80px;
+   }
+   /* кнопка меню */
+   .square{
+    width: 35px;
+    height: 28px;
+    border: 1px solid black;
+    /* если будет задано только для кнопки position: absolute-будет привязана к экрану, 
+    чтобы было привязано к меню необходимо добавить в .header-inner: position: relative; */
+    position: absolute;
+    right: 10px;
+    transition: 1s;
+    /* transform-origin: 50% 50%; */
+    /* ниже появляется только при  мобильной версии */
+    display: block;
+}
+.line{
+    width: 20px;
+    height: 2px;
+    background:  black;
+    position: absolute;
+    left: calc(50% - 10px);
+}
+.one{
+    top: 6px;
+}
+.two{
+    top: 12px;
+}
+.three{
+    top: 18px;
+}
+.square:hover .two{
+    display: none;
+    
+}
+.square:hover .one{
+    transform: rotate(45deg);
+    left: calc(50% - 10px);
+    top: calc(50%);
+
+}
+.square:hover .three{
+    transform: rotate(-45deg);
+    left: calc(50% - 10px);
+    top: calc(50%);
+
+}
+/* кнопка закончилась */
+.contact{
+    /* сдвигаем номер телефона px */
+    margin-right: 55px;
+}
+.promo h1{
+	width: auto;
+	max-width: 850px;
+	font-size: 2rem;
+}
+/* .promo h3 посмотреть  */
+.promo h3{
+	font-size: 1.3rem;
+	line-height: 1.4rem;
+	text-align: center;
+	margin-top: 1rem;
+}
+.btn-cta{
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.1rem;
+	margin-top: 1.1rem;
+}
+}

@@ -1,0 +1,13 @@
+/* стили для компов и ноутов 1320px */
+@media (max-width: 1320px){
+    .container{
+        width: 851px;
+        margin: 0 auto;
+    }
+    .header-inner a{
+        font-size: 16px;
+    }  
+    .logo-img{
+        width: 80px;
+    }
+}
