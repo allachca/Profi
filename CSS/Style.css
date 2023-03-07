@@ -131,7 +131,7 @@ color: #000000;
 
 /* промо-блок */
 .promo{
-	background: rgb(246, 241, 241) url(../Img/design.png) no-repeat 50% 0;
+	background: rgb(246, 241, 241) url(../Img/promo.png) no-repeat 50% 0;
 	background-size: cover;
 	/* background-attachment: fixed фиксирует картинку */
 	background-attachment: fixed;
@@ -180,6 +180,25 @@ text-align: center;
 color: var(--title-color);
 margin-top: 50px;
 }
+/* О компании */
+.about{
+	margin-top: calc(var(--index) * 2);
+}
+.about-list{
+	margin-top: calc(var(--index) * 2);
+	display: flex;
+	justify-content: space-between;
+	
+}
+.about-text{
+	width: 600px;
+	padding-right: 10px;
+}
+.about-list img{
+	max-width: 400px;	
+}
+
+/* Услуги */
 .services{
 	margin-top: calc(var(--index) * 2);
 }
@@ -239,7 +258,6 @@ margin-top: 50px;
 	
 }
 .service-h3{
-	text-align: center;
 	align-self: center;
 	justify-self: center;
 }
@@ -251,8 +269,39 @@ margin-top: 50px;
 	justify-self: flex-end;
 	margin: 10px;
 	}
-
-.svg-icon path{
+/* .svg-icon path{
 	fill: var(--main-color);
 	
+} */
+/* Дизайн-проекты */
+.design{
+	margin-top: calc(var(--index)*2);
+}
+.design-card{
+	display: flex;
+	justify-content: space-between;
+}
+
+.design-card img{
+	width: 50%;
+	margin-right: calc(var(--index));
+}
+/* Преимущества */
+.advants-list{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	/* align-items: center; */
+}
+.advant{
+	flex: 1 1 28%;
+	/* задется для карточки и высота должна быть гибкая  */
+	max-width: 300px;
+	min-width: 200px;
+	height: calc(var(--index) * 15);
+	border: 1px solid red;
+	padding: 10px;
+	margin-bottom: calc(var(--index));
+	text-align: center;
+
 }
