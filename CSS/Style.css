@@ -76,7 +76,7 @@ color: #000000;
 }
 .header{
 	/* если есть заливка */
-	background: #c0c0c0;
+	background: #8d8d8d;
 }
 .container{
 	/* для контейнера прописываются только следующие настройки */
@@ -110,7 +110,7 @@ color: #000000;
 	flex-direction: column;
 }
 .contact a{
-	/* унаследовать отродителяцвет  inherit*/
+	/* унаследовать от родителя цвет  inherit*/
 	color: inherit;
 }
 .square{
@@ -129,7 +129,7 @@ color: #000000;
 	font-size: 24px;
 } */
 
-/* промо-блок */
+/* ПРОМО-БЛОК */
 .promo{
 	background: rgb(246, 241, 241) url(../Img/promo.png) no-repeat 50% 0;
 	background-size: cover;
@@ -180,25 +180,25 @@ text-align: center;
 color: var(--title-color);
 margin-top: 50px;
 }
-/* О компании */
+/* О КОМПАНИИ*/
 .about{
 	margin-top: calc(var(--index) * 2);
 }
 .about-list{
 	margin-top: calc(var(--index) * 2);
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	
 }
 .about-text{
 	width: 600px;
-	padding-right: 10px;
+	/* padding-right: 10px; */
 }
 .about-list img{
-	max-width: 400px;	
+	max-width: 100%;	
 }
 
-/* Услуги */
+/* УСЛУГИ*/
 .services{
 	margin-top: calc(var(--index) * 2);
 }
@@ -273,7 +273,7 @@ margin-top: 50px;
 	fill: var(--main-color);
 	
 } */
-/* Дизайн-проекты */
+/* ДИЗАЙН-ПРОЕКТЫ */
 .design{
 	margin-top: calc(var(--index)*2);
 }
@@ -286,7 +286,10 @@ margin-top: 50px;
 	width: 50%;
 	margin-right: calc(var(--index));
 }
-/* Преимущества */
+/* ПРЕИМУЩЕСТВА */
+.advants{
+	margin-top: calc(var(--index)*2);
+}
 .advants-list{
 	display: flex;
 	flex-flow: row wrap;
@@ -294,14 +297,19 @@ margin-top: 50px;
 	/* align-items: center; */
 }
 .advant{
-	flex: 1 1 28%;
+	flex: 1 1 auto;
 	/* задется для карточки и высота должна быть гибкая  */
-	max-width: 300px;
+	max-width: 400px;
 	min-width: 200px;
-	height: calc(var(--index) * 15);
-	border: 1px solid red;
+	height: calc(var(--index)*10);
+	/* border: 1px solid red; */
 	padding: 10px;
-	margin-bottom: calc(var(--index));
+	margin-bottom: calc(var(--index)*5);
 	text-align: center;
-
+}
+.advant h3{
+	padding-top: 10px;
+}
+.advant p{
+	padding-top: 8px;
 }
