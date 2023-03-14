@@ -1,8 +1,8 @@
 /* стиль для мобильной версии */
-@media (max-width: 851px){
+@media (max-width: 768px){
     .container{
         width: 100%;
-				padding: 0 2vw;
+		padding: 0 2vw;
         margin: 0 auto;
         /* лучше для мобильной версии написать минимальную ширину */
         min-width: 275px;
@@ -92,6 +92,57 @@
 .btn-cta{
 	height: 40px;
 	line-height: 40px;
+	font-size: 1.1rem;
+	margin-top: 1.1rem;
+}
+.about-list{
+    display: block;
+}
+.about-text{
+	width: 100%;
+}
+.about-list img{
+	width: 100%;	
+}
+.service-list{
+    display: block;
+    
+}
+.service{
+    margin: 10vh auto;
+    width: 100%;
+}
+.design-card{
+    display: block;
+    width: 100%;
+}
+.design-card img{
+    width: 100%;
+}
+.portfolio-list{
+    display: block;
+}
+.portfolio-list img{
+    width: 100%;
+}
+/* ФОРМА ЗАЯВКИ */
+.forma{
+    width: 100%;
+}
+.forma-inner{
+    flex-direction: column;
+}
+.forma-text{
+    width: 100%;
+}
+
+.block-form{
+    width: 100%;
+   flex: 1 1 auto; 
+}
+
+.form-control input[type="submit"]{
+    height: 40px;
 	font-size: 1.1rem;
 	margin-top: 1.1rem;
 }

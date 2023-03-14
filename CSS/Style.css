@@ -108,6 +108,7 @@ color: #000000;
 	/* для текста друг под другом */
 	display: flex;
 	flex-direction: column;
+	padding-right: 10px;
 }
 .contact a{
 	/* унаследовать от родителя цвет  inherit*/
@@ -192,7 +193,6 @@ margin-top: 50px;
 }
 .about-text{
 	width: 600px;
-	/* padding-right: 10px; */
 }
 .about-list img{
 	max-width: 100%;	
@@ -299,12 +299,12 @@ margin-top: 50px;
 .advant{
 	flex: 1 1 auto;
 	/* задется для карточки и высота должна быть гибкая  */
-	max-width: 400px;
+	max-width: 350px;
 	min-width: 200px;
 	height: calc(var(--index)*10);
 	/* border: 1px solid red; */
-	padding: 10px;
-	margin-bottom: calc(var(--index)*5);
+	padding: 10px; 
+	 margin-bottom: calc(var(--index)*5);
 	text-align: center;
 }
 .advant h3{
@@ -312,4 +312,103 @@ margin-top: 50px;
 }
 .advant p{
 	padding-top: 8px;
+}
+/* ПОРТФОЛИО */
+.portfolio-list{
+	margin-top: calc(var(--index));
+	display: flex;
+	justify-content: space-between;
+}
+.portfolio-text{
+	width: 600px;
+}
+.portfolio-list img{
+	width: 600px;	
+}
+/* ФОРМА ЗАЯВКИ */
+.forma{
+	background: rgb(246, 241, 241) url(../Img/Forma.png) no-repeat 50% 0;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.forma-inner{
+	margin-top: calc(var(--index)*5);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 90vh;
+}
+
+.forma-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 45vw;
+	padding: 3rem;
+	height: 60vh;
+	/* border: 1px solid red; */
+}
+.forma-text p{
+	font-family: 'Roboto Condensed';
+	font-size: 18px;
+}
+.text-one{
+	font-family: 'Roboto Condensed';
+	font-style: bold;
+	font-weight: 400;
+	font-size: 50px;
+	}
+.text-two{
+	font-family: 'Roboto Condensed';
+	font-style: bold;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+}
+.block-form{
+	display: flex;
+	flex-direction: column;
+	width: 40vw;
+	background: white;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	padding: 3rem;
+	text-align: center;
+	height: 60vh;
+}
+.block-form p{
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 21px;
+}
+.group-row{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem;
+}
+	.form-control input{
+		flex: 1 1 auto;
+		border: 1px solid black;
+		font-size: 14px;
+		padding: 12px 10px;
+		font-family: Arial;
+	}
+	.form-control label{
+		text-align: start;
+		font-size: 16px;
+		padding-top: 12px;
+	}
+.form-control input[type="submit"]{
+width: 400px;
+height: 48px;
+background: var(--main-color);
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+/* line-height: 48px; */
+text-align: center;
+color: var(--title-color);
+/* vertical-align: middle; */
 }
